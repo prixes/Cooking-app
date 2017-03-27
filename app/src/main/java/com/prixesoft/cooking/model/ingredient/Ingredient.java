@@ -73,7 +73,7 @@ public class Ingredient {
 
 
 
-    public static String getTypeString(MeasureType type) {
+    public final static String getTypeString(MeasureType type) {
 
         switch(type) {
             case NUMBER:

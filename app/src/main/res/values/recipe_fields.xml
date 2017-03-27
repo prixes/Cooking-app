@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="json_title">title</string>
+    <string name="json_type">type</string>
+    <string name="json_ingredients">ingredients</string>
+    <string name="json_description">description</string>
+    <string name="json_timePreparing">timePreparing</string>
+    <string name="json_timeToCook">timeToCook</string>
+    <string name="json_timeCooking">timeCooking</string>
+    <string name="json_vegi">vegi</string>
+    <string name="json_tags">tags</string>
+>
+</resources>
+

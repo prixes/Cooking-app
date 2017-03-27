@@ -5,4 +5,5 @@ package com.prixesoft.cooking.IO;
  */
 
 public class RecipeWriter {
+
 }
