@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="number">бр.</string>
+    <string name="teaspoon">ч.л.</string>
+    <string name="tablespoon">с.л.</string>
+    <string name="cup">чаша</string>
+    <string name="milliliter">мл.</string>
+    <string name="liter">литър</string>
+    <string name="milligram">мг.</string>
+    <string name="gram">гр.</string>
+    <string name="kilogram">кг.</string>
+    <string name="pinch">щипка</string>
+</resources>
