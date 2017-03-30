@@ -10,12 +10,17 @@ import java.util.Deque;
 
 public class FullRecipe extends Recipe {
 
-    int timeToCock , timePreparing , timeCooking;
-    int vegi;                                                   // 0 - non vegi  1 - vegi  2 - vegan
+    int timeToCook, timePreparing , timeCooking;
+    VegiInfo vegi;
     Deque<String> tags;
 
     public FullRecipe(){
-
+        super();
+        timeToCook = 0;
+        timePreparing = 0;
+        timeCooking = 0;
+        vegi = VegiInfo.NON_VERI;
+        // tags
     }
 
     public FullRecipe(String name , RecipeType type , Deque<Ingredient> ingredients , String description) {
@@ -23,27 +28,27 @@ public class FullRecipe extends Recipe {
         super(name , type , ingredients , description);
     }
 
-    public int getVegi() {
+    public VegiInfo getVegi() {
         return vegi;
     }
 
-    public void setVegi(int vegi) {
+    public void setVegi(VegiInfo vegi) {
         this.vegi = vegi;
     }
 
-    public int getTimeToCock() {
-        return timeToCock;
+    public int getTimeToCook() {
+        return timeToCook;
     }
 
     public void setTimeToCook(int timeToCock) {
-        this.timeToCock = timeToCock;
+        this.timeToCook = timeToCock;
     }
 
     public int getTimePreparing() {
         return timePreparing;
     }
 
-    public void setTimePreparing(int timePreparing) {
+    public void setTimePrepare(int timePreparing) {
         this.timePreparing = timePreparing;
     }
 

@@ -34,7 +34,7 @@ public class RecipeReaderJSON {
         while (jsonReader.hasNext()) {
             String name = jsonReader.nextName();
             if(name.equals(Resources.getSystem().getString(R.string.json_title)))
-                recipe.setName(jsonReader.nextString());
+                recipe.setTitle(jsonReader.nextString());
             if(name.equals(Resources.getSystem().getString(R.string.json_type)))
               ///  recipe.setType(jsonReader.);                               < ====== object to enum ???1
             return recipe;
@@ -45,7 +45,7 @@ public class RecipeReaderJSON {
                 recipe.setDescription(jsonReader.nextString());
             }
             if(name.equals(Resources.getSystem().getString(R.string.json_timePreparing))) {
-                recipe.setTimePreparing(jsonReader.nextInt());
+                recipe.setTimePrepare(jsonReader.nextInt());
             }
             if(name.equals(Resources.getSystem().getString(R.string.json_timeToCook))) {
                 recipe.setTimeToCook(jsonReader.nextInt());
@@ -54,7 +54,7 @@ public class RecipeReaderJSON {
                 recipe.setTimeCooking(jsonReader.nextInt());
             }
             if(name.equals(Resources.getSystem().getString(R.string.json_vegi))) {
-                recipe.setVegi(jsonReader.nextInt());
+                ///   recipe.setVegi(jsonReader.nextInt());             < ====== object to enum ???1
             }
 
             if(name.equals(Resources.getSystem().getString(R.string.json_tags))) {

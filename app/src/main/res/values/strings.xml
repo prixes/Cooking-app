@@ -3,6 +3,12 @@
     <string name="title_home">Мойте Рецепти</string>
     <string name="title_dashboard">Търсене</string>
     <string name="title_notifications">Notifications</string>
+    <string name="hours">часа</string>
 
+
+    <string-array name="spinner_time">
+        <item>мин</item>
+        <item>часа</item>
+    </string-array>
 
 </resources>

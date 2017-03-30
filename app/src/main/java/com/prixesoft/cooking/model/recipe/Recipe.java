@@ -10,18 +10,21 @@ import java.util.Deque;
 
 public class Recipe {
 
-    String name;
+    String title;
     RecipeType type;
     Deque<Ingredient> ingredients;
     String description;
 
     public Recipe() {
-
+        title = "";
+        type = RecipeType.MAIN_DISH;
+        // ingredients
+        description = "";
     }
 
-    public Recipe (String name , RecipeType type, Deque<Ingredient> ingredients  , String description ){
+    public Recipe (String title , RecipeType type, Deque<Ingredient> ingredients  , String description ){
 
-        this.name = name;
+        this.title = title;
         this.description = description;
         this.ingredients = ingredients;
         this.type = type;
@@ -37,12 +40,12 @@ public class Recipe {
         this.ingredients = ingredients;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {

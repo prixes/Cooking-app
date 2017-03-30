@@ -1,7 +1,6 @@
 package com.prixesoft.cooking.IO;
 
 import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.res.Resources;
 
 import com.prixesoft.cooking.R;
@@ -26,7 +25,7 @@ public class RecipeWriteJSON {
     static JSONArray jsonPacket = new JSONArray();
 
     //Building creating and writing JSON file
-     void writeJSON(FullRecipe recipe, Context context) throws JSONException {
+     public void writeJSON(FullRecipe recipe, Context context) throws JSONException {
 
         // Building whole JSON structure
         //   JSONObject jsonImage = new JSONObject();
@@ -43,7 +42,7 @@ public class RecipeWriteJSON {
         JSONObject jsonGeneral = new JSONObject();
        // jsonGeneral.put("images",jsonImages);
 
-        jsonGeneral.put(Resources.getSystem().getString(R.string.json_title) , recipe.getName() );
+        jsonGeneral.put(Resources.getSystem().getString(R.string.json_title) , recipe.getTitle() );
         jsonGeneral.put(Resources.getSystem().getString(R.string.json_type) , recipe.getType()) ;
 
         JSONArray iArray = new JSONArray();
@@ -57,7 +56,7 @@ public class RecipeWriteJSON {
 
         jsonGeneral.put(Resources.getSystem().getString(R.string.json_timePreparing) , recipe.getTimePreparing());
 
-        jsonGeneral.put(Resources.getSystem().getString(R.string.json_timeToCook) , recipe.getTimeToCock());
+        jsonGeneral.put(Resources.getSystem().getString(R.string.json_timeToCook) , recipe.getTimeToCook());
 
         jsonGeneral.put(Resources.getSystem().getString(R.string.json_timeCooking ) , recipe.getTimeCooking());
 
